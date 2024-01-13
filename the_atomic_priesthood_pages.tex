@@ -1,0 +1,279 @@
+\documentclass[a6paper, 11pt, parskip=half, DIV=15]{scrartcl}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{ellipsis}
+\usepackage{csquotes}
+
+\usepackage{ragged2e}
+% Minimize unwanted hyphenation
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=1
+\hbadness=10000
+
+\usepackage{fontspec}
+
+\setkomafont{section}{\setmainfont{Stalinist One}\LARGE}
+\setkomafont{subsection}{\setmainfont{Stalinist One}\Large}
+\setkomafont{subsubsection}{\setmainfont{Stalinist One}\large}
+
+% Adjust spacing before and after section headings
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=0.25\baselineskip
+]{section}
+
+% Adjust spacing before and after subsection headings
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=0.25\baselineskip
+]{subsection}
+
+% Adjust spacing before and after subsubsection headings
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=0.25\baselineskip
+]{subsubsection}
+
+
+\usepackage{enumitem}
+\setlist[description]{labelindent=0pt, labelsep=\widthof{ }, leftmargin=\widthof{\textbf{License: }}, font=\setmainfont{URWClassico}\bfseries}
+
+\usepackage[hang,flushmargin]{footmisc}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage[type={CC}, version={4.0}, modifier={by-sa}]{doclicense} % Add text and icons for creative commons license
+%\usepackage{array}
+
+\raggedright
+\pagestyle{empty}
+\begin{document}
+
+\begin{titlepage}
+\enlargethispage{3.0\baselineskip}
+%\setmainfont[Scale=2.1]{DarkCrystal-Outline}
+\setmainfont[Scale=1.15]{Stalinist One}
+\huge
+\begin{center}
+\vspace*{-0.5\baselineskip}
+The\ \,Atomic\\[1ex]
+Priesthood
+
+\vfill
+
+\tiny\phantom{a}
+
+\begin{tikzpicture}
+\node at (0,0) {\includegraphics[scale=0.1]{Images/pile_of_skulls.png}};
+%\node at (0,0) {\includegraphics[scale=0.05]{Images/schematic.png}};
+\end{tikzpicture}
+
+\vfill
+
+%\setmainfont{Cochin}
+%\setmainfont{Caveat}
+\setmainfont[Scale=1.1]{TerminusTTFWindows}\Large
+\setmainfont[Scale=1.0]{Long Cang}\huge
+%\setmainfont[Scale=1.0]{Patrick Hand}\huge
+%\setmainfont{Tex Gyre Cursor}\Large
+%\setmainfont[Scale=1.05]{Epson MX Series DMP}\large
+%\setmainfont{Special Elite}\Large
+%\setmainfont{Roboto}
+A Socratic Worldbuilding Game\\%[1ex]
+by Michael Purcell
+\end{center}
+\end{titlepage}
+\thispagestyle{empty}
+\enlargethispage{1.75\baselineskip}
+\setmainfont{TerminusTTFWindows}\normalsize
+%\setmainfont{VT323}\large
+\setmainfont{Roboto-Light}[
+	BoldFont = roboto-regular.ttf,
+	ItalicFont = roboto-lightitalic.ttf,
+	BoldItalicFont = roboto-italic.ttf
+]\normalsize
+\noindent 
+\itshape
+
+These persistent and widely diffused mythological and iconographic resonances
+\ldots{} %of the assignment to which the Task Force is seeking a resolution
+lead to the first recommendation, to wit: that information be launched and
+artificially passed on into the short-term and long-term future with the supplementary aid of folkloristic devices, in particular a combination of an
+artificially created and nurtured ritual-and-legend.
+
+\bigskip
+
+A ritual annually renewed can be foreseen, with the legend retold year-by-year \ldots{}. %(with, presumably, slight variations).
+The actual ``truth'' would be entrusted exclusively to \ldots{} %-- what we might call for dramatic emphasis --
+an ``atomic priesthood'', that is, a commission of knowledgeable physicists,
+experts in radiation sickness, anthropologists, linguists, psychologists,
+semioticians, and whatever additional expertise may be called for now and in
+the future.
+% Membership in this "priesthood" would be self-selective over time.
+\normalfont
+
+\bigskip
+
+\itshape The ``atomic priesthood'' would be charged with the added responsibility of seeing
+to it that our behest \ldots{} %as embodied in the cumulative sequence of metamessages,
+is to be heeded \ldots{} % -- if not for legal reasons, then for moral reasons,
+with perhaps the veiled threat that to ignore the mandate would be tantamount to
+inviting some sort of supernatural retribution.
+\normalfont
+
+\bigskip
+
+\textemdash{} Excerpts from ``Communication Measures to\\
+\phantom{\textemdash{}} Bridge Ten Millennia'' by Thomas A. Sebeok
+
+\setmainfont{Roboto-Light}[
+	BoldFont = roboto-regular.ttf,
+	ItalicFont = roboto-lightitalic.ttf,
+	BoldItalicFont = roboto-italic.ttf
+]
+\normalsize
+
+\newpage
+\enlargethispage{1.75\baselineskip}
+
+\section*{Overview}
+This is a worldbuilding game. It is intended for groups of three to six players and can be played in about one hour.
+
+You will assume the roles of aspirants in a religion devised by a long-dead group of scientists to convey a warning message to future generations about the dangers of nuclear waste.
+
+\vfill
+
+\begin{center}
+\begin{tikzpicture}
+\node at (0,0) {\includegraphics[scale=0.075]{Images/gas_mask.png}};
+\end{tikzpicture}
+\end{center}
+
+\vfill
+
+During the game, you will ask and answer a series of questions about the tenets of this religion. By doing so, you will describe the world that your characters inhabit and how it has been shaped by their teachings and ministrations.
+
+\newpage
+\enlargethispage{1.75\baselineskip}
+
+\section*{Characters}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\footnoterule}{%
+  \kern -3pt
+  \hrule width \textwidth height 0.5pt
+  \kern 2pt
+}
+
+You will portray a lay person seeking to be indoctrinated as a member of the clergy of The Atomic Priesthood. To create your character,
+\begin{enumerate}[nosep]
+	\item Describe your desired ecclesiastical role.
+	\item Describe your background, mannerisms, and physical appearance.
+	\item Describe two types\footnote[1]{\raggedright If in doubt, pick any two of the standard interrogatives (see {\setmainfont{Stalinist One}\scriptsize Factual Questions} for details).} of factual questions about the Priesthood that you can answer.
+%	\item Describe one objective that you want to accomplish at the meeting.
+	\item Describe one aspect of the Priesthood that makes you question your faith.
+\end{enumerate}
+Introduce yourself to the other characters before the meeting begins.
+
+\section*{Gameplay}
+The game takes place over five rounds. 
+During each of the first four rounds, you will discuss one topic that the High Priest has identified as being of particular interest.
+During the last round, you will discuss how to respond to the issues raised in previous rounds. 
+
+\newpage
+\enlargethispage{1.75\baselineskip}
+
+\subsection*{Topics}
+The local High Priest has gathered you to discuss the fact that The Atomic Priesthood was created as an instrument of sociological control.
+
+They have asked you to discuss how the tenets of The Atomic Priesthood are designed to:
+\begin{enumerate}[nosep]
+	\item Ensure the survival of the organization.
+	\item Exert political influence on policy makers.
+	\item Faithfully convey the designers' warning message to all people.
+	\item Enforce compliance with prescribed behaviors intended to prevent accidental contamination events.
+\end{enumerate}
+In each of the first four rounds, you will discuss one of these topics.
+
+\subsection*{Facilitators}
+One player should be a facilitator in each round. Their job is to ensure that everyone has a chance to contribute and that the discussion stays focused on the topic at hand. A different player should be the facilitator in each round.
+
+\newpage
+\enlargethispage{1.75\baselineskip}
+
+\subsection*{Questions}
+During the game, you will ask and answer questions about both the tenets of your religion and the game's setting.
+You will invent the answers to these questions as they arise to describe the world that your characters inhabit.
+
+\subsubsection*{Factual Questions}
+
+Factual questions are questions about the nature of some part of the game's setting.
+These questions are usually stated using one of the standard interrogatives: who, what, where, when, why, and how.
+
+%\vfill
+%
+%\begin{center}
+%\begin{tikzpicture}
+%\node[draw, inner sep=1pt, line width=0.2cm, rotate=10] at (0,0) {\includegraphics[scale=0.0475]{Images/alien_surfing.png}};
+%\end{tikzpicture}
+%\end{center}
+%
+%\vfill
+
+Whoever is best suited to answer each factual question should do so.
+Your answers should be consistent with any details about the setting that have been previously established.
+Beyond that, however, you are free to invent any details you like as a part of your answers.
+
+\newpage
+\enlargethispage{1.75\baselineskip}
+
+\subsubsection*{Socratic Questions}
+Socratic questions are questions that encourage critical thinking.
+These questions frequently arise as follow-up questions after a player establishes a new detail about the game's setting.
+
+Socratic questions are often intended to do one or more of the following:
+\begin{itemize}[nosep]
+	\item Clarify concepts
+	\item Challenge assumptions
+	\item Probe evidence
+	\item Discover alternative viewpoints
+	\item Explore implications
+\end{itemize}
+
+After someone answers a factual question, you should use Socratic questions to help them flesh out their answer and explain how any new details they introduced interact with other details that had been previously established.
+
+
+\newpage
+\enlargethispage{1.75\baselineskip}
+
+\subsection*{Action Items}
+During the last round, your job is to decide what you are going to do next.
+You should describe what you think needs to be done, what you can do yourselves, and what you need help with.
+\blfootnote{\textbf{Contact}: \href{mailto:ttkttkt@gmail.com}{ttkttktg@gmail.com}}
+\blfootnote{\textbf{License}: \doclicenseLongText}
+
+
+As in the previous rounds, you should use Socratic questions to help each other understand what you are proposing and why you think that it describes a reasonable course of action.
+
+In particular, each player should decide how their character has been changed by what they have learned during the preceding discussion. Describe how those changes will affect their ongoing relationship with The Atomic Priesthood.
+
+\vfill
+
+\begin{center}
+\begin{tikzpicture}
+\node at (-1.05in,0) {\includegraphics[scale=0.075]{Images/radiation_symbol.png}};
+\node at (0,0) {\includegraphics[scale=0.075]{Images/poison_symbol.png}};
+\node at (1.05in,0) {\includegraphics[scale=0.075]{Images/biohazard_symbol.png}};
+\end{tikzpicture}
+\end{center}
+
+\end{document}
